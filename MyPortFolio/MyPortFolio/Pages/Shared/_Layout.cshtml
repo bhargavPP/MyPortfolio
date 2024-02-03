@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyPortFolio.styles.css" asp-append-version="true" />
-    <title>Bhargav - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Bhargav - Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -46,7 +46,7 @@
                     <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
                     <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
                     <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-                    <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
+                    @* <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> *@
                     <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
                 </ul>
             </div>
@@ -58,9 +58,9 @@
                 <div class="overlay"></div>
                 <div class="container">
                     <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                        <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
-                            <div class="overlay"></div>
-                        </div>
+                        @*  <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/header-bg.jpg);">
+                        <div class="overlay"></div>
+                        </div> *@
                         <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
                             <div class="text">
                                 <span class="subheading">Hello!</span>
@@ -76,18 +76,25 @@
             <div class="slider-item">
                 <div class="overlay"></div>
                 <div class="container">
-                    <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-                        <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                            <div class="text">
-                                <span class="subheading">Hello!</span>
-                                <h1 class="mb-4 mt-3">I'm a <span>web/App Developer</span> based in Canada</h1>
-                                <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                    <div class="slider-item">
+                        <div class="overlay"></div>
+                        <div class="container">
+                            <div class="row d-flex no-gutters slider-text align-items-end justify-content-center" data-scrollax-parent="true">
+                                <!-- Remove or comment out the unused one-third div -->
+                                <!--<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/header-bg.jpg);">
+                                    <div class="overlay"></div>
+                                </div>-->
+                                <div class="one-forth d-flex align-items-center ftco-animate mx-auto" data-scrollax=" properties: { translateY: '70%' }">
+                                    <div class="text">
+                                        <span class="subheading">Hello!</span>
+                                        <h1 class="mb-4 mt-3">I'm a <span>web Developer</span> based in Canada</h1>
+                                        <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -97,11 +104,11 @@
         <div class="container">
             <div class="row d-flex">
                 <div class="col-md-6 col-lg-5 d-flex">
-                    <div class="img-about img d-flex align-items-stretch">
-                        <div class="overlay"></div>
-                        <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_1.png);">
-                        </div>
+                    @* <div class="img-about img d-flex align-items-stretch">
+                    <div class="overlay"></div>
+                    <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/bg_1.png);">
                     </div>
+                    </div> *@
                 </div>
                 <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
                     <div class="row justify-content-start pb-3">
@@ -110,22 +117,22 @@
                             <h2 class="mb-4">About Me</h2>
                             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                             <ul class="about-info mt-4 px-md-0 px-2">
-                                <li class="d-flex"><span>Name:</span> <span>Bhargav Thompson</span></li>
-                                <li class="d-flex"><span>Date of birth:</span> <span>January 01, 1987</span></li>
-                                <li class="d-flex"><span>Address:</span> <span>San Francisco CA 97987 USA</span></li>
-                                <li class="d-flex"><span>Zip code:</span> <span>1000</span></li>
-                                <li class="d-flex"><span>Email:</span> <span>Bhargavthomp@gmail.com</span></li>
-                                <li class="d-flex"><span>Phone: </span> <span>+1-2234-5678-9-0</span></li>
+                                <li class="d-flex"><span>Name:</span> <span>Bhargav Patel</span></li>
+                                @*  <li class="d-flex"><span>Date of birth:</span> <span>January 01, 1987</span></li> *@
+                                <li class="d-flex"><span>Address:</span> <span>Winnipeg MB, Canada</span></li>
+                                <li class="d-flex"><span>Zip code:</span> <span>R2M 2S6</span></li>
+                                <li class="d-flex"><span>Email:</span> <span>bhargavpp2017@gmail.com</span></li>
+                                <li class="d-flex"><span>Phone: </span> <span>+1-431-Nine-Nine-Zero-2681</span></li>
                             </ul>
                         </div>
                     </div>
                     <div class="counter-wrap ftco-animate d-flex mt-md-3">
                         <div class="text">
                             <p class="mb-4">
-                                <span class="number" data-number="120">0</span>
+                                <span class="number" data-number="14">0</span>
                                 <span>Project complete</span>
                             </p>
-                            <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                            <p><a href="Docs/Resume-Bhargav Patel.pdf" class="btn btn-primary py-3 px-3">View Resume</a></p>
                         </div>
                     </div>
                 </div>
@@ -139,57 +146,55 @@
                 <div class="col-md-10 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Resume</h1>
                     <h2 class="mb-4">Resume</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p>
+                        Experienced Full Stack Developer with 10+ years in IT, recognized with the Best Client Support Award at DRC Techno. Holds a Bachelor's in Information Technology, proficient in managing end-to-end development for small to medium-sized companies. Skilled in desktop and web app development, adept at navigating the software development lifecycle. Diligent, hardworking, and always seeking opportunities for skill enhancement.
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
+                    @* <div class="resume-wrap ftco-animate">
+                    <span class="date">2014-2015</span>
+                    <h2>Master Degree of Design</h2>
+                    <span class="position">Cambridge University</span>
+                    <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    </div> *@
                     <div class="resume-wrap ftco-animate">
-                        <span class="date">2014-2015</span>
-                        <h2>Master Degree of Design</h2>
-                        <span class="position">Cambridge University</span>
-                        <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <span class="date">2006-2010</span>
+                        <h2>Bachelor's Degree of Computer Science</h2>
+                        <span class="position">V N S G U</span>
+                        <p class="mt-4">
+                            Passionate Computer Scientist with a solid IT background and over a decade of experience. Adept in managing the entire development process for small to medium-sized enterprises. Holds a Bachelor's degree in Information Technology and has received the Best Client Support Award from DRC Techno. Specialized in Full Stack Development, proficient in crafting high-quality solutions for diverse client needs. Dedicated to continuous learning and skill refinement to stay at the forefront of the dynamic tech industry.
+                        </p>
                     </div>
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">2014-2015</span>
-                        <h2>Bachelor's Degree of C.A</h2>
-                        <span class="position">Cambridge University</span>
-                        <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                    </div>
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">2014-2015</span>
-                        <h2>Diploma in Computer</h2>
-                        <span class="position">Cambridge University</span>
-                        <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                    </div>
+                    @*  <div class="resume-wrap ftco-animate">
+                    <span class="date">2014-2015</span>
+                    <h2>Diploma in Computer</h2>
+                    <span class="position">Cambridge University</span>
+                    <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    </div> *@
                 </div>
 
                 <div class="col-md-6">
                     <div class="resume-wrap ftco-animate">
-                        <span class="date">2014-2015</span>
-                        <h2>Art &amp; Creative Director</h2>
-                        <span class="position">Cambridge University</span>
-                        <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <span class="date">2015 - Continue..</span>
+                        <h2>Senior Software Developer</h2>
+                        <span class="position">Oliveconcept</span>
+                        <p class="mt-4">Distinguished tenure at OliveConcept, where I honed my skills as a dynamic Full Stack Developer. Played a pivotal role in managing and supporting existing applications while spearheading the development of new ones. Contributed significantly to the software development lifecycle, ensuring the delivery of top-notch solutions that exceeded client expectations. Recognized for outstanding work with the Best Client Support Award at DRC Techno. My time at OliveConcept has been instrumental in shaping my expertise and commitment to excellence in the IT industry.</p>
                     </div>
                     <div class="resume-wrap ftco-animate">
-                        <span class="date">2014-2015</span>
-                        <h2>Wordpress Developer</h2>
-                        <span class="position">Cambridge University</span>
-                        <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                    </div>
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">2017-2018</span>
-                        <h2>UI/UX Designer</h2>
-                        <span class="position">Cambridge University</span>
-                        <p class="mt-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                        <span class="date">2010-2015</span>
+                        <h2>Software Developer</h2>
+                        <span class="position">DRC Techno</span>
+                        <p class="mt-4">Proud recipient of the Best Client Support Award at DRC Techno, showcasing my dedication and proficiency in delivering exceptional solutions. During my tenure, I contributed significantly to the company's success, demonstrating a keen understanding of client requirements and consistently exceeding expectations. The experience at DRC Techno not only elevated my skills but also solidified my commitment to excellence in the ever-evolving IT landscape.</p>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center mt-5">
-                <div class="col-md-6 text-center ftco-animate">
-                    <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-                </div>
+            @*  <div class="row justify-content-center mt-5">
+            <div class="col-md-6 text-center ftco-animate">
+            <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
             </div>
+            </div> *@
         </div>
     </section>
 
@@ -219,7 +224,7 @@
                             <i class="flaticon-flasks"></i>
                         </span>
                         <div class="desc">
-                            <h3 class="mb-5">Phtography</h3>
+                            <h3 class="mb-5">Website Maintenance and Support</h3>
                         </div>
                     </a>
                 </div>
@@ -250,7 +255,7 @@
                             <i class="flaticon-flasks"></i>
                         </span>
                         <div class="desc">
-                            <h3 class="mb-5">Branding</h3>
+                            <h3 class="mb-5">E-commerce Solutions</h3>
                         </div>
                     </a>
                 </div>
@@ -260,7 +265,7 @@
                             <i class="flaticon-ideas"></i>
                         </span>
                         <div class="desc">
-                            <h3 class="mb-5">Product Strategy</h3>
+                            <h3 class="mb-5">Consultation and Collaboration</h3>
                         </div>
                     </a>
                 </div>
@@ -275,13 +280,13 @@
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Skills</h1>
                     <h2 class="mb-4">My Skills</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <p>In the realm of software development skills, far beyond the textual boundaries, distant from the territories of Vokalia and Consonantia..</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 animate-box">
                     <div class="progress-wrap ftco-animate">
-                        <h3>Photoshop</h3>
+                        <h3>ASP.NET Core</h3>
                         <div class="progress">
                             <div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
                                  aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -292,18 +297,18 @@
                 </div>
                 <div class="col-md-6 animate-box">
                     <div class="progress-wrap ftco-animate">
-                        <h3>jQuery</h3>
+                        <h3>C#</h3>
                         <div class="progress">
-                            <div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                <span>85%</span>
+                            <div class="progress-bar color-2" role="progressbar" aria-valuenow="95"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                                <span>95%</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 animate-box">
                     <div class="progress-wrap ftco-animate">
-                        <h3>HTML5</h3>
+                        <h3>MS SQL SERVER</h3>
                         <div class="progress">
                             <div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
                                  aria-valuemin="0" aria-valuemax="100" style="width:95%">
@@ -314,7 +319,7 @@
                 </div>
                 <div class="col-md-6 animate-box">
                     <div class="progress-wrap ftco-animate">
-                        <h3>CSS3</h3>
+                        <h3>JQuery</h3>
                         <div class="progress">
                             <div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
                                  aria-valuemin="0" aria-valuemax="100" style="width:90%">
@@ -325,18 +330,18 @@
                 </div>
                 <div class="col-md-6 animate-box">
                     <div class="progress-wrap ftco-animate">
-                        <h3>WordPress</h3>
+                        <h3>EF Core</h3>
                         <div class="progress">
-                            <div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-                                 aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                <span>70%</span>
+                            <div class="progress-bar color-5" role="progressbar" aria-valuenow="95"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:95%">
+                                <span>95%</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 animate-box">
                     <div class="progress-wrap ftco-animate">
-                        <h3>SEO</h3>
+                        <h3>Azure Devops</h3>
                         <div class="progress">
                             <div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
                                  aria-valuemin="0" aria-valuemax="100" style="width:80%">
@@ -345,6 +350,29 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 animate-box">
+                    <div class="progress-wrap ftco-animate">
+                        <h3>Git</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 animate-box">
+                    <div class="progress-wrap ftco-animate">
+                        <h3>Bootstrap</h3>
+                        <div class="progress">
+                            <div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
+                                 aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -355,7 +383,7 @@
             <div class="row justify-content-center pb-5">
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Projects</h1>
-                    <h2 class="mb-4">Our Projects</h2>
+                    <h2 class="mb-4"> Projects</h2>
                     <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
                 </div>
             </div>
@@ -423,116 +451,116 @@
     </section>
 
 
-    <section class="ftco-section" id="blog-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-5">
-                <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h1 class="big big-2">Blog</h1>
-                    <h2 class="mb-4">Our Blog</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <span class="mr-2">June 21, 2019</span>
-                                    <a href="#" class="mr-2">Admin</a>
-                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <span class="mr-2">June 21, 2019</span>
-                                    <a href="#" class="mr-2">Admin</a>
-                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center mb-3 meta">
-                                <p class="mb-0">
-                                    <span class="mr-2">June 21, 2019</span>
-                                    <a href="#" class="mr-2">Admin</a>
-                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-                                </p>
-                            </div>
-                            <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @*    <section class="ftco-section" id="blog-section">
+    <div class="container">
+    <div class="row justify-content-center mb-5 pb-5">
+    <div class="col-md-7 heading-section text-center ftco-animate">
+    <h1 class="big big-2">Blog</h1>
+    <h2 class="mb-4">Our Blog</h2>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+    </div>
+    </div>
+    <div class="row d-flex">
+    <div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry justify-content-end">
+    <a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+    </a>
+    <div class="text mt-3 float-right d-block">
+    <div class="d-flex align-items-center mb-3 meta">
+    <p class="mb-0">
+    <span class="mr-2">June 21, 2019</span>
+    <a href="#" class="mr-2">Admin</a>
+    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+    </p>
+    </div>
+    <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry justify-content-end">
+    <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+    </a>
+    <div class="text mt-3 float-right d-block">
+    <div class="d-flex align-items-center mb-3 meta">
+    <p class="mb-0">
+    <span class="mr-2">June 21, 2019</span>
+    <a href="#" class="mr-2">Admin</a>
+    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+    </p>
+    </div>
+    <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+    </div>
+    </div>
+    <div class="col-md-4 d-flex ftco-animate">
+    <div class="blog-entry">
+    <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+    </a>
+    <div class="text mt-3 float-right d-block">
+    <div class="d-flex align-items-center mb-3 meta">
+    <p class="mb-0">
+    <span class="mr-2">June 21, 2019</span>
+    <a href="#" class="mr-2">Admin</a>
+    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+    </p>
+    </div>
+    <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section> *@
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-        <div class="container">
-            <div class="row d-md-flex align-items-center">
-                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18">
-                        <div class="text">
-                            <strong class="number" data-number="100">0</strong>
-                            <span>Awards</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18">
-                        <div class="text">
-                            <strong class="number" data-number="1200">0</strong>
-                            <span>Complete Projects</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18">
-                        <div class="text">
-                            <strong class="number" data-number="1200">0</strong>
-                            <span>Happy Customers</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18">
-                        <div class="text">
-                            <strong class="number" data-number="500">0</strong>
-                            <span>Cups of coffee</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @*  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <div class="container">
+    <div class="row d-md-flex align-items-center">
+    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+    <div class="block-18">
+    <div class="text">
+    <strong class="number" data-number="100">0</strong>
+    <span>Awards</span>
+    </div>
+    </div>
+    </div>
+    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+    <div class="block-18">
+    <div class="text">
+    <strong class="number" data-number="1200">0</strong>
+    <span>Complete Projects</span>
+    </div>
+    </div>
+    </div>
+    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+    <div class="block-18">
+    <div class="text">
+    <strong class="number" data-number="1200">0</strong>
+    <span>Happy Customers</span>
+    </div>
+    </div>
+    </div>
+    <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+    <div class="block-18">
+    <div class="text">
+    <strong class="number" data-number="500">0</strong>
+    <span>Cups of coffee</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section> *@
 
     <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-7 ftco-animate text-center">
                     <h2>I'm <span>Available</span> for freelancing</h2>
-                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    @*  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> *@
                     <p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
                 </div>
             </div>
@@ -550,42 +578,42 @@
             </div>
 
             <div class="row d-flex contact-info mb-5">
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="icon-map-signs"></span>
                         </div>
                         <h3 class="mb-4">Address</h3>
-                        <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                        <p>Canada</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="icon-phone2"></span>
                         </div>
                         <h3 class="mb-4">Contact Number</h3>
-                        <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        <p><a href="tel://4319902681">+ 1 431 Nine Nine Zero 2681</a></p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="col-md-6 col-lg-4 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
                             <span class="icon-paper-plane"></span>
                         </div>
                         <h3 class="mb-4">Email Address</h3>
-                        <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        <p><a href="mailto:bhargavpp2017@gmail.com">bhargavpp2017@gmail.com</a></p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-globe"></span>
-                        </div>
-                        <h3 class="mb-4">Website</h3>
-                        <p><a href="#">yoursite.com</a></p>
-                    </div>
+                @* <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="align-self-stretch box p-4 text-center">
+                <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
                 </div>
+                <h3 class="mb-4">Website</h3>
+                <p><a href="#">yoursite.com</a></p>
+                </div>
+                </div> *@
             </div>
 
             <div class="row no-gutters block-9">
@@ -611,7 +639,10 @@
                 </div>
 
                 <div class="col-md-6 d-flex">
-                    <div class="img" style="background-image: url(images/about.jpg);"></div>
+                    <div class="img">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9654879.437154098!2d-115.07348840000001!3d56.130366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1647755023694!5m2!1sen!2sca"
+                                frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -621,17 +652,17 @@
     <footer class="ftco-footer ftco-section">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">About</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                        </ul>
-                    </div>
+                @*  <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                <h2 class="ftco-heading-2">About</h2>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                </ul>
                 </div>
+                </div> *@
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4 ml-md-4">
                         <h2 class="ftco-heading-2">Links</h2>
@@ -650,9 +681,10 @@
                         <ul class="list-unstyled">
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
                             <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Custom Software Development</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>E-commerce Solutions</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Support</a></li>
+                            <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Database Managment</a></li>
                         </ul>
                     </div>
                 </div>
@@ -661,9 +693,9 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Canada</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1 431 Nine-Nine-Zero 2681</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">bhargavpp2017@gmail.com</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -674,7 +706,7 @@
 
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  <i class="icon-heart color-danger" aria-hidden="true"></i>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
