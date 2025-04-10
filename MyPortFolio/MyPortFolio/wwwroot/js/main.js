@@ -269,8 +269,35 @@
     fixedContentPos: false
   });
 
-
-
+ 
+		$(document).ready(function(){
+			// Initialize Magnific Popup for the carousel
+			$('.open-carousel-popup').magnificPopup({
+				type: 'inline',
+				midClick: true,
+				mainClass: 'mfp-fade',
+				callbacks: {
+					open: function () {
+						// Initialize Owl Carousel when the popup opens
+						$('.diversity-images').owlCarousel({
+							items: 1,              // Show one image at a time
+							loop: true,           // Loop through images
+							autoplay: true,       // Auto-slide
+							autoplayTimeout: 3000,// 3 seconds per slide
+							autoplayHoverPause: true, // Pause on hover
+							nav: true,            // Show navigation arrows
+							dots: true,           // Show dots below
+							margin: 10
+						});
+					},
+					close: function () {
+						// Destroy the carousel when popup closes to prevent multiple instances
+						$('.diversity-images').owlCarousel('destroy');
+					}
+				}
+			});
+});
+	 
 
 
 })(jQuery);
