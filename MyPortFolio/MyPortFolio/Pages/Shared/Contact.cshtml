@@ -1,0 +1,40 @@
+﻿@page
+@model MyPortFolio.Modal.InquiryForm
+
+
+<h2>Contact Us</h2>
+<p>Send us a message using the form below.</p>
+
+<form asp-controller="Home" asp-action="Contact" method="post" class="bg-light p-4 p-md-5 contact-form">
+    <div class="form-group">
+        <input asp-for="Name" type="text" class="form-control" placeholder="Your Name" required />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input asp-for="Email" type="email" class="form-control" placeholder="Your Email" required />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input asp-for="Subject" type="text" class="form-control" placeholder="Subject" />
+        <span asp-validation-for="Subject" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <textarea asp-for="Message" name="Message" id="Message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5" />
+    </div>
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-success mt-3">@ViewBag.Message</div>
+    }
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-danger mt-3">@ViewBag.Error</div>
+    }
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
