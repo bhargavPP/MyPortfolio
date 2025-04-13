@@ -415,6 +415,23 @@
                         </div>
                     </div>
                 </div>
+                 <!-- New Project: Quiz Application for Prequalification Assessment -->
+            <div class="col-md-12">
+                <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image:url(images/quiz.jpeg)">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                            <h3><span><a href="https://github.com/bhargavPP/qms" target="_blank" rel="noopener noreferrer">Quiz App for Prequalification Assessment</a></span></h3>
+                       @*  <p class="mt-2">Quiz App for Prequalification Assessment</a></p> *@
+                    </div>
+                </div>
+            </div>
+            <div id="QuizApp" class="carousel-popup mfp-hide">
+                <div class="quizapp-images owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/quizapp/placeholder.png" alt="Quiz App Placeholder" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -587,6 +604,17 @@
                 items: 1
             });
             $carousel.find('.owl-dots, .owl-nav').remove();
+
+            // New QuizApp carousel
+        var $quizAppCarousel = $('.quizapp-images');
+        $quizAppCarousel.owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: true,
+            items: 1
+        });
+        $quizAppCarousel.find('.owl-dots, .owl-nav').remove();
         });
     </script>
     @await Html.PartialAsync("_ValidationScriptsPartial")
