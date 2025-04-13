@@ -8,14 +8,14 @@ namespace MyPortFolio.Services
     public class EmailService
     {
         private readonly string _apiKey;
-        private readonly string _fromEmail;
-        private readonly string _fromName;
+       private readonly string _fromEmail;
+        private readonly string _fromPass;
 
         public EmailService(IConfiguration configuration)
         {
-            _apiKey = configuration["SendGrid:ApiKey"];
-            _fromEmail = configuration["SendGrid:FromEmail"];
-            _fromName = configuration["SendGrid:FromName"];
+            _apiKey = configuration["Authenticator:ApiKey"];
+             _fromEmail = configuration["Authenticator:FromEmail"];
+            _fromPass = configuration["Authenticator:pass"];
         }
 
         //public async Task SendEmailAsync(string toEmail, string subject, string message)
@@ -34,7 +34,7 @@ namespace MyPortFolio.Services
 
 
                 var messageBody = new MimeMessage();
-                messageBody.From.Add(new MailboxAddress("Portfolio", "patelbhargav2020@gmail.com"));
+                messageBody.From.Add(new MailboxAddress("Portfolio", _fromEmail));
                 messageBody.To.Add(new MailboxAddress("Bhargav Patel", toEmail));
                 messageBody.Subject = subject;
 
@@ -45,7 +45,7 @@ namespace MyPortFolio.Services
 
                 using var client = new SmtpClient();
                 await client.ConnectAsync("smtp.gmail.com", 587, MailKit.Security.SecureSocketOptions.StartTls);
-                await client.AuthenticateAsync("patelbhargav2022@gmail.com", "vxti mimw bxhu xccq");
+                await client.AuthenticateAsync(_apiKey,_fromPass);
                 await client.SendAsync(messageBody);
                 await client.DisconnectAsync(true);
             }
