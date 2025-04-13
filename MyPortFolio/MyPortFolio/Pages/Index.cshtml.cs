@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using MyPortFolio.Modal;
 using MyPortFolio.Services;
+using MailKit.Net.Smtp;
+using MimeKit;
 
 namespace MyPortFolio.Pages
 {
@@ -33,9 +35,11 @@ namespace MyPortFolio.Pages
                 {
                     var subject = InquiryForm.Subject ?? $"New Inquiry from {InquiryForm.Name}";
                     var message = $"Name: {InquiryForm.Name}\nEmail: {InquiryForm.Email}\nSubject: {InquiryForm.Subject}\nMessage: {InquiryForm.Message}";
+                    //await _emailService.SendEmailAsync("bhargavpp2017@gmail.com", subject, message);
                     await _emailService.SendEmailAsync("bhargavpp2017@gmail.com", subject, message);
 
                     var confirmationMessage = $"Dear {InquiryForm.Name},\n\nThank you for your message. We will get back to you soon!\n\nBest regards,\nBhargav Patel";
+                    //await _emailService.SendEmailAsync(InquiryForm.Email, "Thank You for Your Inquiry", confirmationMessage);
                     await _emailService.SendEmailAsync(InquiryForm.Email, "Thank You for Your Inquiry", confirmationMessage);
 
                     Message = "Thank you for your message! We will get back to you soon.";

@@ -32,10 +32,10 @@ namespace MyPortFolio.Controller
                 {
                     var subject = model.Subject ?? $"New Inquiry from {model.Name}";
                     var message = $"Name: {model.Name}\nEmail: {model.Email}\nSubject: {model.Subject}\nMessage: {model.Message}";
-                    await _emailService.SendEmailAsync("patelbhargav2022@example.com", subject, message);
+                    //    await _emailService.SendEmailAsync("patelbhargav2022@example.com", subject, message);
 
                     var confirmationMessage = $"Dear {model.Name},\n\nThank you for your message. We will get back to you soon!\n\nBest regards,\nYour Website Team";
-                    await _emailService.SendEmailAsync(model.Email, "Thank You for Your Inquiry", confirmationMessage);
+                    //   await _emailService.SendEmailAsync(model.Email, "Thank You for Your Inquiry", confirmationMessage);
 
                     ViewBag.Message = "Thank you for your message! We will get back to you soon.";
                 }
@@ -47,6 +47,6 @@ namespace MyPortFolio.Controller
             }
             return View(model);
         }
- 
+
     }
 }
